@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maestra2.master.cs" Inherits="Tarea4_Preguntas.Maestra2" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <center>
+<h2>Cuestionario Cultura General</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#00ffff;">
+    <h2>Pregunta 1</h2>
+      <asp:Panel runat="server">
+          <h3 style="box-sizing: border-box; font-family: roboto, sans-serif; color: rgb(0, 0, 0); font-weight: 400; margin: 27px 0px 17px; font-size: 22px; line-height: 30px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: left;"><span style="box-sizing: border-box; color: rgb(0, 0, 0);"><b style="box-sizing: border-box; font-weight: 700;">Actualmente, ¿cuál es el país más poblado del mundo?</b></span></h3>
+          <asp:RadioButton ID="RadioButton1" runat="server" />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:RadioButton ID="RadioButton2" runat="server" />
+          <asp:RadioButton ID="RadioButton3" runat="server" />
+          <br />
+
+
+      </asp:Panel>
+    <p></p>
+  </div>
+
+      <div class="column" style="background-color:#00ffff;">
+    <h2>Pregunta 2</h2>
+      <asp:Panel runat="server">
+
+
+      </asp:Panel>
+    <p></p>
+  </div>
+
+      </div>
+
+      <div class="column" style="background-color:#00ffff;">
+    <h2>Pregunta 3</h2>
+      <asp:Panel runat="server">
+
+
+      </asp:Panel>
+    <p></p>
+  </div>
+
+
+  <div class="column" style="background-color:#00ffff;">
+    <h2>Pregunta 4</h2>
+
+
+      <asp:Panel runat="server">
+
+
+      </asp:Panel>
+
+    <p></p>
+  </div>
+</div>
+</center>
+    </form>
+</body>
+</html>
